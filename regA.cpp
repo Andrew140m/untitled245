@@ -38,7 +38,7 @@ signed main() {
         int v = n;
         if (a == 0) {
             while (b >= v) {
-                var += 1; v += n;
+                var++; v += n;
             }
             cout << var << endl;
         }
@@ -50,8 +50,7 @@ signed main() {
                 g = min(v, a);
                 z = abs(v - g);
                 while (g <= a && min(v, b) >= z) {
-                    var += 1;
-                    g--; z++;
+                    var++; g--; z++;
                 }
                 v += n;
             }
